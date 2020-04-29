@@ -13,8 +13,6 @@ public struct RanmojiCommand: ParsableCommand {
     )
     var path: String?
     
-    public init() {}
-    
     public func run() throws {
         try RanmojiService().run(gender: gender,
                                  path: path)
