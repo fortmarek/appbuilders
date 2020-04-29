@@ -13,7 +13,8 @@ struct RanmojiService {
     }
     
     func run() throws {
-        let emojisData = try fileHandler.readFile(fileHandler.currentPath.appending(component: "emojis.json"))
+        let emojisPath = fileHandler.currentPath.appending(component: "emojis.json")
+        let emojisData = try fileHandler.readFile(emojisPath)
         let emojis = try JSONDecoder().decode([Emoji].self, from: emojisData)
         let randomEmoji = emojiGenerator.generateRandomEmoji(emojis)
         print("\(randomEmoji.emoji) is your generated random emoji!")
