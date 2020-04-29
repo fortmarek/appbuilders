@@ -285,3 +285,15 @@ struct InitCommand: ParsableCommand {
 # [fit] Demo time 🕹️
 
 ---
+
+# What we have learned
+
+- How to use new ArgumentParser
+- Leveraging Swift tools support libraries
+- We should test for our errors
+
+---
+
+# Thanks for you attention! 🥳
+
+### Feel free to ask any questions in hopin<br>or on Twitter @marekfort
