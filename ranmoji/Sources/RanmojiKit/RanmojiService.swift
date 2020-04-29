@@ -2,7 +2,7 @@ import Foundation
 import TSCBasic
 import TSCUtility
 
-final class RanmojiService {
+struct RanmojiService {
     private let fileHandler: FileHandling
     private let emojiGenerator: EmojiGenerating
     
@@ -13,6 +13,9 @@ final class RanmojiService {
     }
     
     func run() throws {
-        
+        let emojisData = try fileHandler.readFile(fileHandler.currentPath.appending(component: "emojis.json"))
+        let emojis = try JSONDecoder().decode([Emoji].self, from: emojisData)
+        let randomEmoji = emojiGenerator.generateRandomEmoji(emojis)
+        print("\(randomEmoji.emoji) is your generated random emoji!")
     }
 }
