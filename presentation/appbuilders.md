@@ -205,6 +205,7 @@ init -p my_path
 
 # Tests ✅
 - Developers expect reliable tools
+- Errors should have helpful messages
 - Errors as first-class citizens
 - Fun to write
 
