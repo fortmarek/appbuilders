@@ -59,7 +59,6 @@
 SPM's Swift 5.0 Package.swift
 
 [.code-highlight: all]
-[.code-highlight: 2]
 [.code-highlight: 7-8]
 
 ```swift
@@ -203,11 +202,11 @@ init -p my_path
 
 ---
 
-# Tests ✅
+# Tests ✅ & Errors 🔥
 - Developers expect reliable tools
 - Errors should have helpful messages
 - Errors as first-class citizens
-- Fun to write
+- Test for your errors
 
 ---
 
@@ -291,7 +290,7 @@ struct InitCommand: ParsableCommand {
 
 - How to use new ArgumentParser
 - Leveraging Swift tools support libraries
-- We should test for our errors
+- How to test our CLI tools
 
 ---
 
