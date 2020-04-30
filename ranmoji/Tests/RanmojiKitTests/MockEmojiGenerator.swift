@@ -2,8 +2,8 @@ import TSCBasic
 @testable import RanmojiKit
 
 final class MockEmojiGenerator: EmojiGenerating {
-    var generateRandomEmojiStub: (([Emoji]) -> Emoji)?
-    func generateRandomEmoji(_ emojis: [Emoji]) -> Emoji {
+    var generateRandomEmojiStub: (([Emoji], Gender) -> Emoji)?
+    func generateRandomEmoji(_ emojis: [Emoji], gender: Gender) -> Emoji {
         generateRandomEmojiStub?(emojis) ?? Emoji(annotation: "test",
                                                           emoji: "",
                                                           gender: nil)
