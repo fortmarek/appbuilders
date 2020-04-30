@@ -6,6 +6,6 @@ protocol EmojiGenerating {
 
 final class EmojiGenerator: EmojiGenerating {
     func generateRandomEmoji(_ emojis: [Emoji]) -> Emoji {
-        return emojis[Int(arc4random_uniform(UInt32(emojis.count)))]
+        return emojis[Int.random(in: 0..<emojis.count)]
     }
 }
