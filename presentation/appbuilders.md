@@ -95,7 +95,7 @@ dependencies: [
 ]
 
 .library(
-    name: "SwiftToolsSupport-auto", targets: ["TSCBasic", "TSCUtility"]
+    name: "SwiftToolsSupport", targets: ["TSCBasic", "TSCUtility"]
 )
 ```
 
@@ -276,7 +276,7 @@ struct InitCommand: ParsableCommand {
 
 # Services
 
-- Solves dependency injection
+- Solve dependency injection
 - Commands become plain parsers without any logic
     - Easy testability
 
